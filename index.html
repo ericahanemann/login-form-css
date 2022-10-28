@@ -5,12 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form CSS</title>
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 <body>
-    
+    <main>
+        <section id="form-content">
+            <header>
+                <img id="logo" src="src/images/logo.svg" alt="Logo Camp.in">
+        
+                <div id="header-title">
+                    <img src="src/images/log-in.svg" alt="Ícone log-in">
+                    <h1>Faça seu login</h1>
+                </div>
+
+                <p>Entre com suas informações de cadastro</p>
+            </header>
+
+            <div id="form">
+                <form id= "login" action="">
+                    <fieldset>
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input id="email" name="email" type="email" placeholder="Digite seu e-mail"> <br>
+
+                        <div id="password-input">
+                            <label for="password">
+                                Senha
+                            </label>
+                            <input id="password" name="password" type="password" placeholder="Digite sua senha">
+                            <img src="src/images/eye.svg" alt="Ícone olho">
+                        </div>
+
+                        <div>
+                            <div id="remember-me-input">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <label for="remember-me">
+                                    Lembre-me
+                                </label>
+                            </div>
+
+                            <a id="forgot-password" href="#">Esqueci minha senha</a>
+                        </div>
+
+                        <button id="login-button">Entrar</button>
+                    </fieldset>
+                </form>
+
+                <div id="dont-have-acc">
+                    <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <img src="src/images/side-image.jpg" alt="Imagem lateral carro com tenda">
+    </aside>
 </body>
 </html>
