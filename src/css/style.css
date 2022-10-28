@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    display: flex;
+
+    background-color: var(--background);
+    color: var(--text-base);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 50vw;
+    height: 100vh;
+}
+
+main #logo {
+    margin: 40px;
+}
+
+#form-content header {
+    margin-bottom: 30px;
+}
+
+main #form-content {
+    margin: 80px;
+    padding: 55px 120px;
+
+    background-color: var(--form-background);
+}
+
+#form-content header #header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#form-content header #header-title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#form-content header #header-title img {
+    height: 24px;
+    width: 24px;
+}
+
+#form #login fieldset {
+    border: none;
+}
+
+#form #login label {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#form #login #email, #form #login #password {
+    width: 335px;
+    height: 44px;
+    padding: 14px 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    background-color: var(--form-background);
+    color: var(--text-base);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    outline: none;
+}
+
+#form #login #password {
+    background-image: url("../images/lock.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+}
+
+#form #login #email {
+    background-image: url("../images/mail.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+}
+
+#form #login #email:focus {
+    background-image: url("../images/mail-focus.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    border-radius: 4px;
+}
+
+#form #login #password:focus {
+    background-image: url("../images/lock-focus.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    border-radius: 4px;
+}
+
+#form #login #password-input {
+    position: relative;
+}
+
+#form #login #password-input img {
+    position: absolute;
+    bottom: 32px;
+    right: 46px;
+}
+
+#form #login #password-input img:hover {
+    cursor: pointer;
+}
+
+#form #login #remember-forgot-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+#side-image {
+    width: 50vw;
+    height: 100vh;
+
+    background-image: url("../images/side-image.jpg");
+    background-position: center;
+    background-size: cover;
+}
