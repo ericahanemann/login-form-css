@@ -40,7 +40,7 @@
                                 Senha
                             </label> <br>
                             <input id="password" name="password" type="password" placeholder="Digite sua senha">
-                            <img src="src/images/eye.svg" alt="Ícone olho">
+                            <img onclick="showHidePassword()" id="eye-button" class="closed" src="src/images/closed-eye.svg" alt="Ícone olho">
                         </div>
 
                         <div id="remember-forgot-password">
@@ -64,5 +64,7 @@
     </main>
 
     <aside id="side-image"></aside>
+
+    <script src="main.js"></script>
 </body>
 </html>
